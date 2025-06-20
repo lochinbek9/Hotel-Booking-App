@@ -2,6 +2,7 @@
 import React from "react"
 
 import {assets} from "../assets/assets"
+import { useState, useEffect } from "react";
 
 import { Link, useLoaderData, useLocation, useNavigate } from "react-router-dom";
 import {useClerk, useUser, UserButton} from "@clerk/clerk-react"
@@ -20,21 +21,28 @@ const Navbar = () => {
         { name: 'About', path: '/' },
     ];
 
-    const [isScrolled, setIsScrolled] = React.useState(false);
-    const [isMenuOpen, setIsMenuOpen] = React.useState(false);
+    const [isScrolled, setIsScrolled] = useState(false);
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     const {openSignIn}  = useClerk();
     const {user} = useUser();
     const navigate = useNavigate();
     const location = useLocation();
 
-    React.useEffect(() => {
+    useEffect(() => {
+        if(location.pathname !== "/"){
+            setIsScrolled(true);
+            return;
+        }else{
+            setIsScrolled(false);
+        }
+        setIsScrolled(prev => location.pathname !== "/" ? true : prev);
         const handleScroll = () => {
             setIsScrolled(window.scrollY > 10);
         };
         window.addEventListener("scroll", handleScroll);
         return () => window.removeEventListener("scroll", handleScroll);
-    }, []);
+    }, [location.pathname]);
 
     return (
            
@@ -75,13 +83,13 @@ const Navbar = () => {
                 </div>
 
                 {/* Mobile Menu Button */}
-                {/* {user && <UserButton>
-                        <UserButton.MenuItems>
-                            <UserButton.Action label="My Books" labelIcon={<BookIcon/>} onClick={() =>{navigate("/my-bookings")}} />
-                        </UserButton.MenuItems>
-                    </UserButton>} */}
                 <div className="flex items-center gap-3 md:hidden">
-                    <img src={assets.menuIcon} onClick={() =>{setIsMenuOpen(!isMenuOpen)}} className={`${isScrolled && "invert"} h-4`} alt="" />
+                   {user && <UserButton>
+                        <UserButton.MenuItems>
+                                <UserButton.Action label="My bookings" labelIcon={<BookIcon/>} onClick={()=> navigate("/my-bookings")} />
+                        </UserButton.MenuItems>
+                    </UserButton>}
+                    <img src={assets.menuIcon} alt="Menu" onClick={() => setIsMenuOpen(!isMenuOpen)} className={`${isScrolled && "invert"} h-4`} />
                 </div>
 
                 {/* Mobile Menu */}
