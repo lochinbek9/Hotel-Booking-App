@@ -54,9 +54,7 @@ updated with real-time insights to ensure smooth operations.'/>
                      text-gray-800 font-medium text-center">Payment Status</th>
                   </tr>
               </thead>
-
           <tbody className="text-sm">
-           
             {dashboardData.bookings.map((item, index) =>(
               <tr key={index}>
                   <td className="py-3 px-4 text-gray-700 border-t border-gray-300">
