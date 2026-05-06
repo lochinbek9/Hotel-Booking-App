@@ -23,12 +23,12 @@ function MyBookings() {
                             <img src={booking.room.images[0]} alt="hotel-img" className="md:w-44 rounded shadow object-cover" />
                             <div className="flex flex-col gap-1.5 md:ml-4 mt-3 md:mt-0">
                                 <p className="font-playfair text-2xl">
-                                    {booking.hotel.name}
-                                    <span className="font-inter text-sm"> ({booking.room.roomType})</span>
+                                    {t(booking.hotel.name)}
+                                    <span className="font-inter text-sm"> ({t(booking.room.roomType)})</span>
                                 </p>
                                 <div className="flex items-center gap-1 text-sm text-gray-500">
                                     <img src={assets.locationIcon} alt="location-icon" />
-                                    <span>{booking.hotel.address}</span>
+                                    <span>{t(booking.hotel.address)}</span>
                                 </div>
                                 <div className="flex items-center gap-1 text-sm text-gray-500">
                                     <img src={assets.locationIcon} alt="guests-icon" />

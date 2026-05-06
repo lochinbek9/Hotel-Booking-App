@@ -12,7 +12,7 @@ function HotelCard({room, index}) {
 
         <div className="p-4 pt-5">
             <div className="flex items-center justify-between">
-                <p className="font-playfair text-xl font-medium text-gray-800">{room.hotel.name}</p>
+                <p className="font-playfair text-xl font-medium text-gray-800">{t(room.hotel.name)}</p>
                 
                 <div className="flex items-center gap-1">
                     <img src={assets.starIconFilled} alt="Star" /> 4.5
@@ -21,7 +21,7 @@ function HotelCard({room, index}) {
             </div>
             <div className="flex items-center gap-1 text-sm">
                  <img src={assets.locationIcon} alt="Star Icon" /> 
-                 <span>{room.hotel.address}</span>
+                 <span>{t(room.hotel.address)}</span>
                </div>
             
             <div className="flex items-center justify-between mt-4">

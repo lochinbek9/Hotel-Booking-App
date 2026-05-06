@@ -32,11 +32,11 @@ function ListRoom() {
               rooms.map((item, index) => (
                 <tr key={index}>
                   <td className="py-3 px-4 text-gray-700 border-t border-gray-300">
-                    {item.roomType}
+                    {t(item.roomType)}
                   </td>
 
                   <td className="py-3 px-4 text-gray-700 border-t border-gray-300 max-sm:hidden">
-                    {item.amenities.join(", ")}
+                    {item.amenities.map(a => t(a)).join(", ")}
                   </td>
 
                   <td className="py-3 px-4 text-gray-700 border-t border-gray-300">

@@ -20,7 +20,7 @@ function RoomDetails() {
       {/* Room Details */}
       <div className="flex flex-col md:flex-row items-start md:items-center gap-2">
         <h1 className="text-3xl md:text-4xl font-playfair">
-            {room.hotel.name} <span className="font-inter text-sm">({room.roomType})</span>
+            {t(room.hotel.name)} <span className="font-inter text-sm">({t(room.roomType)})</span>
         </h1>
         <p className="text-xs font-inter py-1.5 px-3 text-white bg-orange-500 rounded-full">20% {t('OFF', 'OFF')}</p>
       </div>
@@ -33,7 +33,7 @@ function RoomDetails() {
 
         <div className="flex items-center gap-1 text-gray-500 mt-2">
             <img src={assets.locationIcon} alt="location-icon" />
-            <span>{room.hotel.address}</span>
+            <span>{t(room.hotel.address)}</span>
         </div>
         {/* Room Images */}
         <div className="flex flex-col lg:flex-row mt-6 gap-6">
@@ -56,7 +56,7 @@ function RoomDetails() {
                         {room.amenities.map((item, index) =>(
                             <div key={index} className="flex items-center gap-2 px-3 py-2 rounded-lg bg-gray-100">
                                 <img src={facilityIcons[item]} alt={item} className="w-5 h-5" />
-                                <p className="text-xs">{item}</p>
+                                <p className="text-xs">{t(item)}</p>
                             </div>
                         ))}
                     </div>
@@ -92,10 +92,10 @@ function RoomDetails() {
         <div className="mt-25 spece-y-4">
             {roomCommonData.map((spec, index)=>(
                 <div key={index} className="flex items-start gap-2">
-                    <img src={spec.icon} alt={`${spec.title}-icon`}  className="w-6.5"/>
+                    <img src={spec.icon} alt={`${t(spec.title)}-icon`}  className="w-6.5"/>
                     <div>
-                        <p className="text-base">{spec.title}</p>
-                        <p className="text-gray-500">{spec.description}</p>
+                        <p className="text-base">{t(spec.title)}</p>
+                        <p className="text-gray-500">{t(spec.description)}</p>
                     </div>
                 </div>
             ))}
@@ -110,7 +110,7 @@ function RoomDetails() {
             <div className="flex gap-4">
                 <img src={room.hotel.owner.image} alt="Host" className="h-14 w-14 md:h-18 md:w-18 rounded-full" />
                 <div>
-                    <p className="text-lg md:text-xl">{t('Hosted by', 'Hosted by')} {room.hotel.name}</p>
+                    <p className="text-lg md:text-xl">{t('Hosted by', 'Hosted by')} {t(room.hotel.name)}</p>
                     <div className="flex items-center mt-1">
                         <StarRating/>
                         <p className="ml-2">200+ {t('reviews', 'reviews')}</p>

@@ -23,8 +23,8 @@ function ExlusiveOffers() {
                 <p className='px-3 py-1 absolute top-4 left-4 text-xs bg-white
             text-gray-800 font-medium rounded-fulll'>{item.priceOff}% {t('OFF', 'OFF')}</p>
             <div>
-                <p className="text-2xl font-medium font-playfair">{item.title}</p>
-                <p>{item.description}</p>
+                <p className="text-2xl font-medium font-playfair">{t(item.title)}</p>
+                <p>{t(item.description)}</p>
                 <p className="text-xs text-white/70 mt-3">{t('Expires', 'Expires')} {item.expiryDate}</p>
             </div>
             <button className="flex items-center gap-2 font-medium cursor-pointer mt-4 mb-5">{t('View Offers', 'View Offers')}
