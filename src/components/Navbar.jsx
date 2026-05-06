@@ -6,6 +6,7 @@ import { useState, useEffect } from "react";
 
 import { Link, useLoaderData, useLocation, useNavigate } from "react-router-dom";
 import {useClerk, useUser, UserButton} from "@clerk/clerk-react"
+import { useTranslation } from "react-i18next";
 
 const BookIcon = () =>{
     <svg className="w-4 h-4 text-gray-700" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" >
@@ -14,11 +15,13 @@ const BookIcon = () =>{
 }
 
 const Navbar = () => {
+    const { t, i18n } = useTranslation();
+
     const navLinks = [
-        { name: 'Home', path: '/' },
-        { name: 'Hotels', path: '/rooms' },
-        { name: 'Exprience ', path: '/' },
-        { name: 'About', path: '/' },
+        { name: t('Home'), path: '/' },
+        { name: t('Hotels'), path: '/rooms' },
+        { name: t('Experience'), path: '/' },
+        { name: t('About'), path: '/' },
     ];
 
     const [isScrolled, setIsScrolled] = useState(false);
@@ -49,8 +52,8 @@ const Navbar = () => {
     <nav className={`fixed top-0 left-0  w-full flex items-center justify-between px-4 md:px-16 lg:px-24 xl:px-32 transition-all duration-500 z-50 ${isScrolled ? "bg-white/80 shadow-md text-gray-700 backdrop-blur-lg py-3 md:py-4" : "py-4 md:py-6"}`}>
 
     
-    <Link to="/">
-        <img src={assets.logo} alt="logo" className={`h-9 ${isScrolled && "invert opacity-80"}`} />
+    <Link to="/" className="flex items-center">
+        <span className={`font-playfair text-2xl font-bold ${isScrolled ? "text-gray-800" : "text-white"} transition-colors duration-500`}>Mirzo hotel</span>
     </Link>
 
  
@@ -61,8 +64,20 @@ const Navbar = () => {
                             <div className={`${isScrolled ? "bg-gray-700" : "bg-white"} h-0.5 w-0 group-hover:w-full transition-all duration-300`} />
                         </a>
                     ))}
+                    
+                    {/* Language Switcher */}
+                    <select 
+                        value={i18n.language} 
+                        onChange={(e) => i18n.changeLanguage(e.target.value)}
+                        className={`bg-transparent outline-none cursor-pointer ${isScrolled ? 'text-gray-700' : 'text-white'}`}
+                    >
+                        <option value="uz" className="text-black">UZ</option>
+                        <option value="ru" className="text-black">RU</option>
+                        <option value="en" className="text-black">EN</option>
+                    </select>
+
                     <button className={`border px-4 py-1 text-sm font-light rounded-full cursor-pointer ${isScrolled ? 'text-black' : 'text-white'} transition-all`} onClick={() => navigate("/owner")}>
-                        Dashboard
+                        {t('Dashboard')}
                     </button>
                 </div>
 
@@ -72,12 +87,12 @@ const Navbar = () => {
                     className={`${isScrolled && 'invert'} h-7 transition-all duration-500`}/>
                     {user ? (<UserButton>
                         <UserButton.MenuItems>
-                            <UserButton.Action label="My Books" labelIcon={<BookIcon/>} onClick={() =>{navigate("/my-bookings")}} />
+                            <UserButton.Action label={t('My Bookings')} labelIcon={<BookIcon/>} onClick={() =>{navigate("/my-bookings")}} />
                         </UserButton.MenuItems>
                     </UserButton>) 
                 : 
                 <button onClick={openSignIn} className="bg-black text-white px-8 py-2.5 rounded-full ml-4 transition-all duration-500">
-                        Login
+                        {t('Login')}
                     </button>}
                     
                 </div>
@@ -86,7 +101,7 @@ const Navbar = () => {
                 <div className="flex items-center gap-3 md:hidden">
                    {user && <UserButton>
                         <UserButton.MenuItems>
-                                <UserButton.Action label="My bookings" labelIcon={<BookIcon/>} onClick={()=> navigate("/my-bookings")} />
+                                <UserButton.Action label={t('My Bookings')} labelIcon={<BookIcon/>} onClick={()=> navigate("/my-bookings")} />
                         </UserButton.MenuItems>
                     </UserButton>}
                     <img src={assets.menuIcon} alt="Menu" onClick={() => setIsMenuOpen(!isMenuOpen)} className={`${isScrolled && "invert"} h-4`} />
@@ -103,13 +118,23 @@ const Navbar = () => {
                             {link.name}
                         </a>
                     ))}
+                    
+                    <select 
+                        value={i18n.language} 
+                        onChange={(e) => i18n.changeLanguage(e.target.value)}
+                        className="bg-transparent outline-none cursor-pointer"
+                    >
+                        <option value="uz" className="text-black">O'zbekcha (UZ)</option>
+                        <option value="ru" className="text-black">Русский (RU)</option>
+                        <option value="en" className="text-black">English (EN)</option>
+                    </select>
 
-                   {user &&  <button className="border px-4 py-1 text-sm font-light rounded-full cursor-pointer transition-all" onClick={() => navigate("/owner")}>
-                       Dashboard
+                   {user &&  <button className="border border-black px-4 py-1 text-sm font-light rounded-full cursor-pointer transition-all" onClick={() => navigate("/owner")}>
+                       {t('Dashboard')}
                     </button>}
 
                    {!user &&  <button onClick={openSignIn} className="bg-black text-white px-8 py-2.5 rounded-full transition-all duration-500">
-                        Login
+                        {t('Login')}
                     </button> }
                 </div>
                  

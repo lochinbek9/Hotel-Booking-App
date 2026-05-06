@@ -1,7 +1,8 @@
 import { assets, cities } from "../assets/assets"
-
+import { useTranslation } from "react-i18next";
 
 function HotelReg() {
+  const { t } = useTranslation();
   return (
     <div className="fixed top-0 bottom-0 left-0 right-0 z-[100] flex items-center justify-center bg-black/70">
       <form className="relative flex bg-white rounded-xl max-w-4xl max-md:mx-2">
@@ -9,35 +10,35 @@ function HotelReg() {
 
         <div className="flex flex-col items-center justify-center p-8 md:p-10 w-full h-full">
           <img src={assets.closeIcon} alt="close-icon" className="absolute top-4 right-4 h-4 w-4 cursor-pointer" />
-          <p className="text-2xl font-semibold">Register Your Hotel</p>
+          <p className="text-2xl font-semibold">{t('Register Your Hotel', 'Register Your Hotel')}</p>
           {/* Hotel Name */}
           <div className="w-full mt-4">
             <label htmlFor="name" className="font-medium text-gray-500">
-              Hotel Name
+              {t('Hotel Name', 'Hotel Name')}
             </label>
-            <input type="text" placeholder="Type here" className="border border-gray-200 rounded w-full px-3 py-2.5 mt-1 outline-indigo-500 font-light" id="name" required />
+            <input type="text" placeholder={t('Type here', 'Type here')} className="border border-gray-200 rounded w-full px-3 py-2.5 mt-1 outline-indigo-500 font-light" id="name" required />
           </div>
           {/* Phone */}
           <div className="w-full mt-4">
             <label htmlFor="contact" className="font-medium text-gray-500">
-              Phone
+              {t('Phone', 'Phone')}
             </label>
-            <input type="text" placeholder="Type here" className="border border-gray-200 rounded w-full px-3 py-2.5 mt-1 outline-indigo-500 font-light" id="contact" required />
+            <input type="text" placeholder={t('Type here', 'Type here')} className="border border-gray-200 rounded w-full px-3 py-2.5 mt-1 outline-indigo-500 font-light" id="contact" required />
           </div>
 
            {/* Address */}
            <div className="w-full mt-4">
             <label htmlFor="address" className="font-medium text-gray-500">
-              Address
+              {t('Address', 'Address')}
             </label>
-            <input type="text" placeholder="Type here" className="border border-gray-200 rounded w-full px-3 py-2.5 mt-1 outline-indigo-500 font-light" id="address" required />
+            <input type="text" placeholder={t('Type here', 'Type here')} className="border border-gray-200 rounded w-full px-3 py-2.5 mt-1 outline-indigo-500 font-light" id="address" required />
           </div>
           {/* Select City Drop Down */}
           <div>
-            <label htmlFor="city" className="font-medium text-gray-500">City</label>
+            <label htmlFor="city" className="font-medium text-gray-500">{t('City', 'City')}</label>
             <select name="cities" id="cities" className="border border-gray-200 rounded w-full px-3 py-2.5 mt-1 outline-indigo-500 font-light" required>
                 
-                <option value="city">Select City</option>
+                <option value="city">{t('Select City', 'Select City')}</option>
                 {cities.map((city) =>(
                     <option key={city} value={city}>{city}</option>
                   ))}

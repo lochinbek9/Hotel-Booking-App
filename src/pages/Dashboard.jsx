@@ -2,15 +2,15 @@
 import { useState } from "react"
 import { assets, dashboardDummyData } from "../assets/assets"
 import Title from "../components/Title"
+import { useTranslation } from "react-i18next";
 
 function Dashboard() {
+  const { t } = useTranslation();
   const [dashboardData, setDashboardData] = useState(dashboardDummyData)
   return (
     <div>
 
-      <Title align='left' font='outfit' title='Dashboard' subTitle='Monitor your
-room listings, track bookings and analyze revenue-all in one place. Stay
-updated with real-time insights to ensure smooth operations.'/>
+      <Title align='left' font='outfit' title={t('Dashboard', 'Dashboard')} subTitle={t('Dashboard Subtitle', 'Monitor your room listings, track bookings and analyze revenue-all in one place. Stay updated with real-time insights to ensure smooth operations.')}/>
 
       <div className="flex gap-4 my-8">
         {/* Total Bookings */}
@@ -18,7 +18,7 @@ updated with real-time insights to ensure smooth operations.'/>
           <img src={assets.totalBookingIcon}
             className="max-sm:hidden h-10" alt="" />
           <div>
-            <p>Total Bookings</p>
+            <p>{t('Total Bookings', 'Total Bookings')}</p>
             <p>{dashboardData.totalBookings}</p>
           </div>
         </div>
@@ -27,7 +27,7 @@ updated with real-time insights to ensure smooth operations.'/>
           <img src={assets.totalRevenueIcon} alt="" className="max-sm:hidden h-10" />
 
           <div className="flex flex-col sm:ml-4 font-medium">
-            <p className="text-blue-500 text-lg">Total Revenue</p>
+            <p className="text-blue-500 text-lg">{t('Total Revenue', 'Total Revenue')}</p>
             <p className="text-neutral-400 text-base">
               $ {dashboardData.totalRevenue}
             </p>
@@ -38,20 +38,20 @@ updated with real-time insights to ensure smooth operations.'/>
       {/* Recent Bookings */}
 
       <h2 className="text-xl text-blue-950/70 font-medium mb-5">
-        Recent Bookings
+        {t('Recent Bookings', 'Recent Bookings')}
       </h2>
       <div className="w-full max-w-3xl text-left border border-gray-300 rounded-lg max-h-80 overflow-y-scroll">
           <table className="w-full">
               <thead className="bg-gray-50">
                   <tr>
                     <th className="py-3 px-4
-                     text-gray-800 font-medium">User Name</th>
+                     text-gray-800 font-medium">{t('User Name', 'User Name')}</th>
                     <th className="py-3 px-4
-                     text-gray-800 font-medium max-sm:hidden">Room Name</th>
+                     text-gray-800 font-medium max-sm:hidden">{t('Room Name', 'Room Name')}</th>
                     <th className="py-3 px-4
-                     text-gray-800 font-medium text-center">Total Name</th>
+                     text-gray-800 font-medium text-center">{t('Total Price', 'Total Price')}</th>
                     <th className="py-3 px-4
-                     text-gray-800 font-medium text-center">Payment Status</th>
+                     text-gray-800 font-medium text-center">{t('Payment Status', 'Payment Status')}</th>
                   </tr>
               </thead>
           <tbody className="text-sm">
@@ -69,7 +69,7 @@ updated with real-time insights to ensure smooth operations.'/>
                   
                   <td className="py-3 px-4 border-t border-gray-300 flex justify-center">
                    <button className={`py-1 px-3 text-xs rounded-full mx-auto ${item.isPaid ? "bg-green-200 text-green-600" : "bg-amber-200 text-yellow-600"}`}>
-                      {item.isPaid ? "Completed" : "Pending"}
+                      {item.isPaid ? t("Completed", "Completed") : t("Pending", "Pending")}
                     </button>
                   </td>
               </tr>

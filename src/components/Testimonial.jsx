@@ -1,11 +1,13 @@
 import Title from "./Title"
 import { testimonials } from "../assets/assets"
 import StarRating from "./StarRating"
+import { useTranslation } from "react-i18next";
 
 function Testimonial() {
+    const { t } = useTranslation();
     return (
         <div className="flex flex-col items-center px-6 md:px-16 lg:px-24 bg-slate-50 pt-20 pb-30">
-        <Title title="What Our Guests Say" subTitle="Discover why discerning travelers consistently choose QuickStay for their exclusive and luxurious accommodations around the world."/>
+        <Title title={t("What Our Guests Say", "What Our Guests Say")} subTitle={t('Testimonials Subtitle', "Discover why discerning travelers consistently choose Mirzo hotel for their exclusive and luxurious accommodations around the world.")}/>
 
 
 
