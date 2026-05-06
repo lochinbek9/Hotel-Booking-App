@@ -141,7 +141,36 @@ const resources = {
       "Payment": "To'lov",
       "Aug 31": "31-avgust",
       "Sep 20": "20-sentyabr",
-      "Sep 25": "25-sentyabr"
+      "Sep 25": "25-sentyabr",
+      "COMPANY": "KOMPANIYA",
+      "Careers": "Karyera",
+      "Press": "Matbuot",
+      "Blog": "Blog",
+      "Partners": "Hamkorlar",
+      "SUPPORT": "QO'LLAB-QUVVATLASH",
+      "Help Center": "Yordam Markazi",
+      "Safety Information": "Xavfsizlik Ma'lumotlari",
+      "Cancellation Options": "Bekor Qilish Variantlari",
+      "Contact Us": "Biz Bilan Bog'lanish",
+      "Accessibility": "Foydalanish Imkoniyati",
+      "STAY UPDATED": "XABARDOR BO'LING",
+      "Footer Subscribe": "Ilhom va maxsus takliflar uchun yangiliklarimizga obuna bo'ling.",
+      "Your email": "Sizning elektron pochtangiz",
+      "All rights reserved.": "Barcha huquqlar himoyalangan.",
+      "Privacy": "Maxfiylik",
+      "Terms": "Shartlar",
+      "Sitemap": "Sayt xaritasi",
+      "Stay Inspired": "Ilhomlanib qoling",
+      "Stay Inspired Subtitle": "Bizning xabarnomamizga qo'shiling va birinchilardan bo'lib yangi manzillar, eksklyuziv takliflar va sayohat ilhomini kashf eting.",
+      "Enter your email": "Elektron pochtangizni kiriting",
+      "Privacy Consent": "Obuna bo'lish orqali siz bizning Maxfiylik Siyosatimizga rozilik bildirasiz va yangiliklarni qabul qilishga rozi bo'lasiz.",
+      "Footer Description": "Boutique mehmonxonalaridan tortib, hashamatli villalar va xususiy orollargacha bo'lgan dunyoning eng g'aroyib turar joylarini kashf eting.",
+      "Room Details Text": "Mehmonlar mavjudlikka qarab birinchi qavatga joylashtiriladi. Siz chinakam shahar shukuhiga ega bo'lgan shinam ikki xonali kvartiraga ega bo'lasiz. Ko'rsatilgan narx ikki kishi uchun, guruhlar uchun aniq narxni bilish uchun mehmonlar sonini belgilang.",
+      "What Our Guests Say": "Mehmonlarimiz nima deydi",
+      "Testimonials Subtitle": "Nima uchun talabchan sayohatchilar butun dunyo bo'ylab eksklyuziv va hashamatli turar joylari uchun doimiy ravishda Mirzo hotelni tanlashini bilib oling.",
+      "My Bookings Subtitle": "O'tmishdagi, joriy va kelajakdagi mehmonxona bandlovlarini bir joyda osongina boshqaring. Sayohatlaringizni bir necha tugmani bosish orqali rejalashtiring."
+
+
 
 
 
@@ -286,7 +315,36 @@ const resources = {
       "Payment": "Оплата",
       "Aug 31": "31 авг",
       "Sep 20": "20 сен",
-      "Sep 25": "25 сен"
+      "Sep 25": "25 сен",
+      "COMPANY": "КОМПАНИЯ",
+      "Careers": "Карьера",
+      "Press": "Пресса",
+      "Blog": "Блог",
+      "Partners": "Партнеры",
+      "SUPPORT": "ПОДДЕРЖКА",
+      "Help Center": "Справочный Центр",
+      "Safety Information": "Информация о Безопасности",
+      "Cancellation Options": "Варианты Отмены",
+      "Contact Us": "Связаться с Нами",
+      "Accessibility": "Доступность",
+      "STAY UPDATED": "БУДЬТЕ В КУРСЕ",
+      "Footer Subscribe": "Подпишитесь на нашу рассылку для получения вдохновения и специальных предложений.",
+      "Your email": "Ваш email",
+      "All rights reserved.": "Все права защищены.",
+      "Privacy": "Конфиденциальность",
+      "Terms": "Условия",
+      "Sitemap": "Карта сайта",
+      "Stay Inspired": "Вдохновляйтесь",
+      "Stay Inspired Subtitle": "Присоединяйтесь к нашей рассылке и первыми узнавайте о новых направлениях, эксклюзивных предложениях и вдохновении для путешествий.",
+      "Enter your email": "Введите ваш email",
+      "Privacy Consent": "Подписываясь, вы соглашаетесь с нашей Политикой конфиденциальности и даете согласие на получение обновлений.",
+      "Footer Description": "Откройте для себя самые необычные места для проживания в мире: от бутик-отелей до роскошных вилл и частных островов.",
+      "Room Details Text": "Гости будут размещены на первом этаже при наличии свободных мест. Вы получите комфортабельную квартиру с двумя спальнями и настоящей городской атмосферой. Указанная цена действительна для двух гостей, для групп, пожалуйста, укажите количество гостей, чтобы узнать точную цену.",
+      "What Our Guests Say": "Что говорят наши гости",
+      "Testimonials Subtitle": "Узнайте, почему взыскательные путешественники неизменно выбирают отель Mirzo для эксклюзивного и роскошного проживания по всему миру.",
+      "My Bookings Subtitle": "Легко управляйте своими прошлыми, текущими и предстоящими бронированиями отелей в одном месте. Планируйте свои поездки без проблем всего в несколько кликов."
+
+
 
 
 
@@ -431,7 +489,36 @@ const resources = {
       "Payment": "Payment",
       "Aug 31": "Aug 31",
       "Sep 20": "Sep 20",
-      "Sep 25": "Sep 25"
+      "Sep 25": "Sep 25",
+      "COMPANY": "COMPANY",
+      "Careers": "Careers",
+      "Press": "Press",
+      "Blog": "Blog",
+      "Partners": "Partners",
+      "SUPPORT": "SUPPORT",
+      "Help Center": "Help Center",
+      "Safety Information": "Safety Information",
+      "Cancellation Options": "Cancellation Options",
+      "Contact Us": "Contact Us",
+      "Accessibility": "Accessibility",
+      "STAY UPDATED": "STAY UPDATED",
+      "Footer Subscribe": "Subscribe to our newsletter for inspiration and special offers.",
+      "Your email": "Your email",
+      "All rights reserved.": "All rights reserved.",
+      "Privacy": "Privacy",
+      "Terms": "Terms",
+      "Sitemap": "Sitemap",
+      "Stay Inspired": "Stay Inspired",
+      "Stay Inspired Subtitle": "Join our newsletter and be the first to discover new destinations, exclusive offers, and travel inspiration.",
+      "Enter your email": "Enter your email",
+      "Privacy Consent": "By subscribing, you agree to our Privacy Policy and consent to receive updates.",
+      "Footer Description": "Discover the world's most extraordinary places to stay, from boutique hotels to luxury villas and private islands.",
+      "Room Details Text": "Guests will be allocated on the ground floor according to availability. You get a comfortable Two bedroom apartment has a true city feeling. The price quoted is for two guest, at the guest slot please mark the number of guests to get the exact price for groups. The Guests will be allocated ground floor according to availability. You get the comfortable two bedroom apartment that has a true city feeling.",
+      "What Our Guests Say": "What Our Guests Say",
+      "Testimonials Subtitle": "Discover why discerning travelers consistently choose Mirzo hotel for their exclusive and luxurious accommodations around the world.",
+      "My Bookings Subtitle": "Easily manage your past, current, and upcoming hotel reservations in one place. Plan your trips seamlessly with just a few clicks"
+
+
 
 
 
