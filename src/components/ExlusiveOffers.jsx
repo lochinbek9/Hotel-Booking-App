@@ -25,7 +25,7 @@ function ExlusiveOffers() {
             <div>
                 <p className="text-2xl font-medium font-playfair">{t(item.title)}</p>
                 <p>{t(item.description)}</p>
-                <p className="text-xs text-white/70 mt-3">{t('Expires', 'Expires')} {item.expiryDate}</p>
+                <p className="text-xs text-white/70 mt-3">{t('Expires', 'Expires')} {t(item.expiryDate, item.expiryDate)}</p>
             </div>
             <button className="flex items-center gap-2 font-medium cursor-pointer mt-4 mb-5">{t('View Offers', 'View Offers')}
                 <img className="invert group-hover:translate-x-1 
