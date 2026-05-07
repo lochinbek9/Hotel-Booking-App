@@ -3,6 +3,14 @@ import { assets, userBookingsDummyData } from "../assets/assets"
 import { useState } from "react"
 import { useTranslation } from "react-i18next";
 
+const formatDate = (dateString) => {
+    const d = new Date(dateString);
+    const day = String(d.getDate()).padStart(2, '0');
+    const month = String(d.getMonth() + 1).padStart(2, '0');
+    const year = d.getFullYear();
+    return `${day}.${month}.${year}`;
+};
+
 function MyBookings() {
     const { t } = useTranslation();
     const [bookings, setBookings] = useState(userBookingsDummyData)
@@ -42,13 +50,13 @@ function MyBookings() {
                             <div>
                                 <p>{t('Check-In', 'Check-In')}:</p>
                                 <p className="text-gray-500 text-sm">
-                                    {new Date(booking.checkInDate).toDateString()}
+                                    {formatDate(booking.checkInDate)}
                                 </p>
                             </div>
                             <div>
                                 <p>{t('Check-Out', 'Check-Out')}:</p>
                                 <p className="text-gray-500 text-sm">
-                                    {new Date(booking.checkOutDate).toDateString()}
+                                    {formatDate(booking.checkOutDate)}
                                 </p>
                             </div>
                         </div>

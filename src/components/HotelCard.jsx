@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom"
-import { assets } from "../assets/assets"
+import { assets, facilityIcons } from "../assets/assets"
 import { useTranslation } from "react-i18next";
 
 function HotelCard({room, index}) {
@@ -12,17 +12,26 @@ function HotelCard({room, index}) {
 
         <div className="p-4 pt-5">
             <div className="flex items-center justify-between">
-                <p className="font-playfair text-xl font-medium text-gray-800">{t(room.hotel.name)}</p>
+                <p className="font-playfair text-xl font-medium text-gray-800">{t(room.roomType)}</p>
                 
                 <div className="flex items-center gap-1">
                     <img src={assets.starIconFilled} alt="Star" /> 4.5
                 </div>
                
             </div>
-            <div className="flex items-center gap-1 text-sm">
-                 <img src={assets.locationIcon} alt="Star Icon" /> 
-                 <span>{t(room.hotel.address)}</span>
-               </div>
+            <div className="flex items-center gap-1 text-sm mt-1 mb-1">
+                 <img src={assets.locationIcon} alt="Location Icon" /> 
+                 <span className="truncate">{t(room.hotel.address)}</span>
+            </div>
+            
+            <div className="flex items-center gap-2 mt-3 flex-wrap">
+                {room.amenities.slice(0,3).map((amenity, i) => (
+                    <div key={i} className="flex items-center gap-1 text-xs text-gray-500 bg-gray-50 px-2 py-1 rounded">
+                        <img src={facilityIcons[amenity]} alt={amenity} className="w-3.5 h-3.5 opacity-70" />
+                        <span>{t(amenity)}</span>
+                    </div>
+                ))}
+            </div>
             
             <div className="flex items-center justify-between mt-4">
                 <p> <span className="text-xl text-gray-800"> ${room.pricePerNight} </span> {t('/night', '/night')}</p>

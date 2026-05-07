@@ -90,9 +90,9 @@ export const exclusiveOffers = [
 
 // Testimonials Dummy Data
 export const testimonials = [
-    { id: 1, name: "Emma Rodriguez", address: "Barcelona, Spain", image: "https://images.unsplash.com/photo-1633332755192-727a05c4013d?q=80&w=200", rating: 5, review: "I've used many booking platforms before, but none compare to the personalized experience and attention to detail that Mirzo hotel provides." },
-    { id: 2, name: "Liam Johnson", address: "New York, USA", image: "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?q=80&w=200", rating: 4, review: "Mirzo hotel exceeded my expectations. The booking process was seamless, and the hotels were absolutely top-notch. Highly recommended!" },
-    { id: 3, name: "Sophia Lee", address: "Seoul, South Korea", image: "https://images.unsplash.com/photo-1701615004837-40d8573b6652?q=80&w=200", rating: 5, review: "Amazing service! I always find the best luxury accommodations through Mirzo hotel. Their recommendations never disappoint!" }
+    { id: 1, name: "Malika Karimovna", address: "Toshkent, O'zbekiston", image: "https://images.unsplash.com/photo-1633332755192-727a05c4013d?q=80&w=200", rating: 5, review: "I've used many booking platforms before, but none compare to the personalized experience and attention to detail that Mirzo hotel provides." },
+    { id: 2, name: "Dilshod To'rayev", address: "Farg'ona, O'zbekiston", image: "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?q=80&w=200", rating: 4, review: "Mirzo hotel exceeded my expectations. The booking process was seamless, and the hotels were absolutely top-notch. Highly recommended!" },
+    { id: 3, name: "Azizbek Rahimov", address: "Samarqand, O'zbekiston", image: "https://images.unsplash.com/photo-1701615004837-40d8573b6652?q=80&w=200", rating: 5, review: "Amazing service! I always find the best luxury accommodations through Mirzo hotel. Their recommendations never disappoint!" }
 ];
 
 // Facility Icon
@@ -145,7 +145,7 @@ export const roomsDummyData = [
     {
         "_id": "67f7647c197ac559e4089b96",
         "hotel": hotelDummyData,
-        "roomType": "Double Bed",
+        "roomType": "Deluxe Room",
         "pricePerNight": 399,
         "amenities": ["Room Service", "Mountain View", "Pool Access"],
         "images": [roomImg1, roomImg2, roomImg3, roomImg4],
@@ -157,7 +157,7 @@ export const roomsDummyData = [
     {
         "_id": "67f76452197ac559e4089b8e",
         "hotel": hotelDummyData,
-        "roomType": "Double Bed",
+        "roomType": "Luxury Suite",
         "pricePerNight": 299,
         "amenities": ["Room Service", "Mountain View", "Pool Access"],
         "images": [roomImg2, roomImg3, roomImg4, roomImg1],
@@ -169,7 +169,7 @@ export const roomsDummyData = [
     {
         "_id": "67f76406197ac559e4089b82",
         "hotel": hotelDummyData,
-        "roomType": "Double Bed",
+        "roomType": "Standard Room",
         "pricePerNight": 249,
         "amenities": ["Free WiFi", "Free Breakfast", "Room Service"],
         "images": [roomImg3, roomImg4, roomImg1, roomImg2],

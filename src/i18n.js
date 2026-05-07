@@ -13,8 +13,8 @@ const resources = {
       "Login": "Kirish",
       "My Bookings": "Mening bandlovlarim",
       "The Ultimate Hotel Experience": "Eng zo'r mehmonxona tajribasi",
-      "Hero Title": "Mukammal Sayohat Manzilingizni Kashf Eting",
-      "Hero Subtitle": "Dunyodagi eng eksklyuziv mehmonxona va kurortlarda mislsiz hashamat va qulaylik sizni kutmoqda. Sayohatni bugunoq boshlang.",
+      "Hero Title": "Andijon markazidagi shinam va zamonaviy hordiq",
+      "Hero Subtitle": "Andijon shahridagi eng yaxshi mehmonxonada unutilmas va qulay dam oling. Xonangizni bugunoq band qiling.",
       "Destination": "Manzil",
       "Check in": "Kirish",
       "Check out": "Chiqish",
@@ -115,7 +115,7 @@ const resources = {
       "OFF": "chegirma",
       "Expires": "Amal qilish muddati:",
       "View Offers": "Takliflarni ko'rish",
-      "Best Seller": "Top sotuv",
+      "Best Seller": "Eng ko'p band qilingan",
       "/night": "/kecha",
       "View All Destinations": "Barcha manzillarni ko'rish",
       "FILTERS": "FILTRLAR",
@@ -168,7 +168,14 @@ const resources = {
       "Room Details Text": "Mehmonlar mavjudlikka qarab birinchi qavatga joylashtiriladi. Siz chinakam shahar shukuhiga ega bo'lgan shinam ikki xonali kvartiraga ega bo'lasiz. Ko'rsatilgan narx ikki kishi uchun, guruhlar uchun aniq narxni bilish uchun mehmonlar sonini belgilang.",
       "What Our Guests Say": "Mehmonlarimiz nima deydi",
       "Testimonials Subtitle": "Nima uchun talabchan sayohatchilar butun dunyo bo'ylab eksklyuziv va hashamatli turar joylari uchun doimiy ravishda Mirzo hotelni tanlashini bilib oling.",
-      "My Bookings Subtitle": "O'tmishdagi, joriy va kelajakdagi mehmonxona bandlovlarini bir joyda osongina boshqaring. Sayohatlaringizni bir necha tugmani bosish orqali rejalashtiring."
+      "My Bookings Subtitle": "O'tmishdagi, joriy va kelajakdagi mehmonxona bandlovlarini bir joyda osongina boshqaring. Sayohatlaringizni bir necha tugmani bosish orqali rejalashtiring.",
+      "Toshkent, O'zbekiston": "Toshkent, O'zbekiston",
+      "Farg'ona, O'zbekiston": "Farg'ona, O'zbekiston",
+      "Samarqand, O'zbekiston": "Samarqand, O'zbekiston",
+      "Standard Room": "Standart xona",
+      "Deluxe Room": "Deluks xona",
+      "Luxury Suite": "Lyuks xona"
+
 
 
 
@@ -187,8 +194,8 @@ const resources = {
       "Login": "Войти",
       "My Bookings": "Мои бронирования",
       "The Ultimate Hotel Experience": "Идеальный гостиничный опыт",
-      "Hero Title": "Откройте Для Себя Идеальное Место Для Отдыха",
-      "Hero Subtitle": "Непревзойденная роскошь и комфорт ждут вас в самых эксклюзивных отелях и курортах мира. Начните свое путешествие сегодня.",
+      "Hero Title": "Уютный и современный отдых в центре Андижана",
+      "Hero Subtitle": "Насладитесь незабываемым и комфортным отдыхом в лучшем отеле Андижана. Забронируйте номер уже сегодня.",
       "Destination": "Направление",
       "Check in": "Заезд",
       "Check out": "Выезд",
@@ -289,7 +296,7 @@ const resources = {
       "OFF": "скидка",
       "Expires": "Истекает:",
       "View Offers": "Посмотреть предложения",
-      "Best Seller": "Хит продаж",
+      "Best Seller": "Самые бронируемые",
       "/night": "/ночь",
       "View All Destinations": "Посмотреть все направления",
       "FILTERS": "ФИЛЬТРЫ",
@@ -342,7 +349,14 @@ const resources = {
       "Room Details Text": "Гости будут размещены на первом этаже при наличии свободных мест. Вы получите комфортабельную квартиру с двумя спальнями и настоящей городской атмосферой. Указанная цена действительна для двух гостей, для групп, пожалуйста, укажите количество гостей, чтобы узнать точную цену.",
       "What Our Guests Say": "Что говорят наши гости",
       "Testimonials Subtitle": "Узнайте, почему взыскательные путешественники неизменно выбирают отель Mirzo для эксклюзивного и роскошного проживания по всему миру.",
-      "My Bookings Subtitle": "Легко управляйте своими прошлыми, текущими и предстоящими бронированиями отелей в одном месте. Планируйте свои поездки без проблем всего в несколько кликов."
+      "My Bookings Subtitle": "Легко управляйте своими прошлыми, текущими и предстоящими бронированиями отелей в одном месте. Планируйте свои поездки без проблем всего в несколько кликов.",
+      "Toshkent, O'zbekiston": "Ташкент, Узбекистан",
+      "Farg'ona, O'zbekiston": "Фергана, Узбекистан",
+      "Samarqand, O'zbekiston": "Самарканд, Узбекистан",
+      "Standard Room": "Стандартный номер",
+      "Deluxe Room": "Номер Делюкс",
+      "Luxury Suite": "Люкс номер"
+
 
 
 
@@ -361,8 +375,8 @@ const resources = {
       "Login": "Login",
       "My Bookings": "My Bookings",
       "The Ultimate Hotel Experience": "The Ultimate Hotel Experience",
-      "Hero Title": "Discover Your Perfect Getaway Destination",
-      "Hero Subtitle": "Unparalleled luxury and comfort await at the world's most exclusive hotels and resorts. Start your journey today.",
+      "Hero Title": "Cozy and modern retreat in the heart of Andijan",
+      "Hero Subtitle": "Enjoy an unforgettable and comfortable stay at the best hotel in Andijan. Book your room today.",
       "Destination": "Destination",
       "Check in": "Check in",
       "Check out": "Check out",
@@ -463,7 +477,7 @@ const resources = {
       "OFF": "OFF",
       "Expires": "Expires",
       "View Offers": "View Offers",
-      "Best Seller": "Best Seller",
+      "Best Seller": "Most Booked",
       "/night": "/night",
       "View All Destinations": "View All Destinations",
       "FILTERS": "FILTERS",
@@ -516,7 +530,14 @@ const resources = {
       "Room Details Text": "Guests will be allocated on the ground floor according to availability. You get a comfortable Two bedroom apartment has a true city feeling. The price quoted is for two guest, at the guest slot please mark the number of guests to get the exact price for groups. The Guests will be allocated ground floor according to availability. You get the comfortable two bedroom apartment that has a true city feeling.",
       "What Our Guests Say": "What Our Guests Say",
       "Testimonials Subtitle": "Discover why discerning travelers consistently choose Mirzo hotel for their exclusive and luxurious accommodations around the world.",
-      "My Bookings Subtitle": "Easily manage your past, current, and upcoming hotel reservations in one place. Plan your trips seamlessly with just a few clicks"
+      "My Bookings Subtitle": "Easily manage your past, current, and upcoming hotel reservations in one place. Plan your trips seamlessly with just a few clicks",
+      "Toshkent, O'zbekiston": "Tashkent, Uzbekistan",
+      "Farg'ona, O'zbekiston": "Fergana, Uzbekistan",
+      "Samarqand, O'zbekiston": "Samarkand, Uzbekistan",
+      "Standard Room": "Standard Room",
+      "Deluxe Room": "Deluxe Room",
+      "Luxury Suite": "Luxury Suite"
+
 
 
 
