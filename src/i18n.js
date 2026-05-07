@@ -14,7 +14,7 @@ const resources = {
       "My Bookings": "Mening bandlovlarim",
       "The Ultimate Hotel Experience": "Eng zo'r mehmonxona tajribasi",
       "Hero Title": "Andijon markazidagi shinam va zamonaviy hordiq",
-      "Hero Subtitle": "Andijon shahridagi eng yaxshi mehmonxonada unutilmas va qulay dam oling. Xonangizni bugunoq band qiling.",
+      "Hero Subtitle": "Andijon markazida, Bobur maydonidan 5 daqiqalik yo'lda joylashgan shinam mehmonxona. Biznes va oilaviy sayohatlar uchun ideal tanlov.",
       "Destination": "Manzil",
       "Check in": "Kirish",
       "Check out": "Chiqish",
@@ -174,7 +174,16 @@ const resources = {
       "Samarqand, O'zbekiston": "Samarqand, O'zbekiston",
       "Standard Room": "Standart xona",
       "Deluxe Room": "Deluks xona",
-      "Luxury Suite": "Lyuks xona"
+      "Luxury Suite": "Lyuks xona",
+      "Andijon sh., Milliy tiklanish ko'chasi, 14-uy": "Andijon sh., Milliy tiklanish ko'chasi, 14-uy",
+      "Room Service": "24/7 xizmat",
+      "City View": "Shahar manzarasi",
+      "Business Trip Package": "Biznes sayohat paketi",
+      "Free transfer and dinner for stays over 3 days": "3 kundan ko'p qolganlarga bepul transfer va kechki ovqat",
+      "Early Bird Discount": "Erta band qilish chegirmasi",
+      "Book 60 days in advance and get 30% off.": "60 kun oldin band qiling va 30% chegirmaga ega bo'ling.",
+      "Open in Google Maps": "Google Maps'da ochish"
+
 
 
 
@@ -195,7 +204,7 @@ const resources = {
       "My Bookings": "Мои бронирования",
       "The Ultimate Hotel Experience": "Идеальный гостиничный опыт",
       "Hero Title": "Уютный и современный отдых в центре Андижана",
-      "Hero Subtitle": "Насладитесь незабываемым и комфортным отдыхом в лучшем отеле Андижана. Забронируйте номер уже сегодня.",
+      "Hero Subtitle": "Уютный отель в центре Андижана, в 5 минутах от площади Бабура. Идеальный выбор для деловых и семейных поездок.",
       "Destination": "Направление",
       "Check in": "Заезд",
       "Check out": "Выезд",
@@ -355,7 +364,16 @@ const resources = {
       "Samarqand, O'zbekiston": "Самарканд, Узбекистан",
       "Standard Room": "Стандартный номер",
       "Deluxe Room": "Номер Делюкс",
-      "Luxury Suite": "Люкс номер"
+      "Luxury Suite": "Люкс номер",
+      "Andijon sh., Milliy tiklanish ko'chasi, 14-uy": "г. Андижан, ул. Миллий тикланиш, дом 14",
+      "Room Service": "Круглосуточное обслуживание 24/7",
+      "City View": "Вид на город",
+      "Business Trip Package": "Пакет для бизнес-поездок",
+      "Free transfer and dinner for stays over 3 days": "Бесплатный трансфер и ужин при проживании более 3 дней",
+      "Early Bird Discount": "Скидка за раннее бронирование",
+      "Book 60 days in advance and get 30% off.": "Забронируйте за 60 дней и получите скидку 30%.",
+      "Open in Google Maps": "Открыть в Google Maps"
+
 
 
 
@@ -376,7 +394,7 @@ const resources = {
       "My Bookings": "My Bookings",
       "The Ultimate Hotel Experience": "The Ultimate Hotel Experience",
       "Hero Title": "Cozy and modern retreat in the heart of Andijan",
-      "Hero Subtitle": "Enjoy an unforgettable and comfortable stay at the best hotel in Andijan. Book your room today.",
+      "Hero Subtitle": "A cozy hotel in the center of Andijan, a 5-minute walk from Babur Square. The perfect choice for business and family trips.",
       "Destination": "Destination",
       "Check in": "Check in",
       "Check out": "Check out",
@@ -536,7 +554,16 @@ const resources = {
       "Samarqand, O'zbekiston": "Samarkand, Uzbekistan",
       "Standard Room": "Standard Room",
       "Deluxe Room": "Deluxe Room",
-      "Luxury Suite": "Luxury Suite"
+      "Luxury Suite": "Luxury Suite",
+      "Andijon sh., Milliy tiklanish ko'chasi, 14-uy": "14 Milliy Tiklanish Street, Andijan city",
+      "Room Service": "24/7 Room Service",
+      "City View": "City View",
+      "Business Trip Package": "Business Trip Package",
+      "Free transfer and dinner for stays over 3 days": "Free transfer and dinner for stays over 3 days",
+      "Early Bird Discount": "Early Bird Discount",
+      "Book 60 days in advance and get 30% off.": "Book 60 days in advance and get 30% off.",
+      "Open in Google Maps": "Open in Google Maps"
+
 
 
 

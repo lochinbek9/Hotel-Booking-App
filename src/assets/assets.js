@@ -100,7 +100,7 @@ export const facilityIcons = {
     "Free WiFi": assets.freeWifiIcon,
     "Free Breakfast": assets.freeBreakfastIcon,
     "Room Service": assets.roomServiceIcon,
-    "Mountain View": assets.mountainIcon,
+    "City View": assets.mountainIcon,
     "Pool Access": assets.poolIcon,
 };
 
@@ -131,7 +131,7 @@ export const userDummyData = {
 export const hotelDummyData = {
     "_id": "67f76393197ac559e4089b72",
     "name": "Urbanza Suites",
-    "address": "Main Road  123 Street , 23 Colony",
+    "address": "Andijon sh., Milliy tiklanish ko'chasi, 14-uy",
     "contact": "+0123456789",
     "owner": userDummyData,
     "city": "New York",
@@ -146,8 +146,8 @@ export const roomsDummyData = [
         "_id": "67f7647c197ac559e4089b96",
         "hotel": hotelDummyData,
         "roomType": "Deluxe Room",
-        "pricePerNight": 399,
-        "amenities": ["Room Service", "Mountain View", "Pool Access"],
+        "pricePerNight": 100,
+        "amenities": ["Room Service", "City View", "Pool Access"],
         "images": [roomImg1, roomImg2, roomImg3, roomImg4],
         "isAvailable": true,
         "createdAt": "2025-04-10T06:26:04.013Z",
@@ -158,8 +158,8 @@ export const roomsDummyData = [
         "_id": "67f76452197ac559e4089b8e",
         "hotel": hotelDummyData,
         "roomType": "Luxury Suite",
-        "pricePerNight": 299,
-        "amenities": ["Room Service", "Mountain View", "Pool Access"],
+        "pricePerNight": 60,
+        "amenities": ["Room Service", "City View", "Pool Access"],
         "images": [roomImg2, roomImg3, roomImg4, roomImg1],
         "isAvailable": true,
         "createdAt": "2025-04-10T06:25:22.593Z",
@@ -170,7 +170,7 @@ export const roomsDummyData = [
         "_id": "67f76406197ac559e4089b82",
         "hotel": hotelDummyData,
         "roomType": "Standard Room",
-        "pricePerNight": 249,
+        "pricePerNight": 50,
         "amenities": ["Free WiFi", "Free Breakfast", "Room Service"],
         "images": [roomImg3, roomImg4, roomImg1, roomImg2],
         "isAvailable": true,
@@ -182,7 +182,7 @@ export const roomsDummyData = [
         "_id": "67f763d8197ac559e4089b7a",
         "hotel": hotelDummyData,
         "roomType": "Single Bed",
-        "pricePerNight": 199,
+        "pricePerNight": 40,
         "amenities": ["Free WiFi", "Room Service", "Pool Access"],
         "images": [roomImg4, roomImg1, roomImg2, roomImg3],
         "isAvailable": true,
@@ -203,7 +203,7 @@ export const userBookingsDummyData = [
         "hotel": hotelDummyData,
         "checkInDate": "2025-04-30T00:00:00.000Z",
         "checkOutDate": "2025-05-01T00:00:00.000Z",
-        "totalPrice": 299,
+        "totalPrice": 60,
         "guests": 1,
         "status": "pending",
         "paymentMethod": "Stripe",
@@ -219,7 +219,7 @@ export const userBookingsDummyData = [
         "hotel": hotelDummyData,
         "checkInDate": "2025-04-27T00:00:00.000Z",
         "checkOutDate": "2025-04-28T00:00:00.000Z",
-        "totalPrice": 399,
+        "totalPrice": 100,
         "guests": 1,
         "status": "pending",
         "paymentMethod": "Pay At Hotel",
@@ -235,7 +235,7 @@ export const userBookingsDummyData = [
         "hotel": hotelDummyData,
         "checkInDate": "2025-04-11T00:00:00.000Z",
         "checkOutDate": "2025-04-12T00:00:00.000Z",
-        "totalPrice": 199,
+        "totalPrice": 40,
         "guests": 1,
         "status": "pending",
         "paymentMethod": "Pay At Hotel",
@@ -249,7 +249,7 @@ export const userBookingsDummyData = [
 // Dashboard Dummy Data
 export const dashboardDummyData = {
     "totalBookings": 3,
-    "totalRevenue": 897,
+    "totalRevenue": 200,
     "bookings": userBookingsDummyData
 }
 
