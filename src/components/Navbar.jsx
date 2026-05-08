@@ -66,19 +66,23 @@ const Navbar = () => {
                     ))}
                     
                     {/* Language Switcher */}
-                    <select 
-                        value={i18n.language} 
-                        onChange={(e) => i18n.changeLanguage(e.target.value)}
-                        className={`bg-transparent outline-none cursor-pointer ${isScrolled ? 'text-gray-700' : 'text-white'}`}
-                    >
-                        <option value="uz" className="text-black">UZ</option>
-                        <option value="ru" className="text-black">RU</option>
-                        <option value="en" className="text-black">EN</option>
-                    </select>
+                    <div className="flex items-center gap-1">
+                        <span className={`${isScrolled ? 'text-gray-700' : 'text-white'}`}>🌐</span>
+                        <select 
+                            value={i18n.language} 
+                            onChange={(e) => i18n.changeLanguage(e.target.value)}
+                            className={`bg-transparent outline-none cursor-pointer font-medium ${isScrolled ? 'text-gray-700' : 'text-white'}`}
+                        >
+                            <option value="uz" className="text-black">UZ</option>
+                            <option value="ru" className="text-black">RU</option>
+                            <option value="en" className="text-black">EN</option>
+                        </select>
+                    </div>
 
-                    <button className={`border px-4 py-1 text-sm font-light rounded-full cursor-pointer ${isScrolled ? 'text-black' : 'text-white'} transition-all`} onClick={() => navigate("/owner")}>
+                    {/* Admin Dashboard hidden for guests */}
+                    {false && <button className={`border px-4 py-1 text-sm font-light rounded-full cursor-pointer ${isScrolled ? 'text-black' : 'text-white'} transition-all`} onClick={() => navigate("/owner")}>
                         {t('Dashboard')}
-                    </button>
+                    </button>}
                 </div>
 
                 {/* Desktop Right */}
@@ -119,17 +123,21 @@ const Navbar = () => {
                         </a>
                     ))}
                     
-                    <select 
-                        value={i18n.language} 
-                        onChange={(e) => i18n.changeLanguage(e.target.value)}
-                        className="bg-transparent outline-none cursor-pointer"
-                    >
-                        <option value="uz" className="text-black">O'zbekcha (UZ)</option>
-                        <option value="ru" className="text-black">Русский (RU)</option>
-                        <option value="en" className="text-black">English (EN)</option>
-                    </select>
+                    <div className="flex items-center gap-2">
+                        <span>🌐</span>
+                        <select 
+                            value={i18n.language} 
+                            onChange={(e) => i18n.changeLanguage(e.target.value)}
+                            className="bg-transparent outline-none cursor-pointer font-medium"
+                        >
+                            <option value="uz" className="text-black">O'zbekcha (UZ)</option>
+                            <option value="ru" className="text-black">Русский (RU)</option>
+                            <option value="en" className="text-black">English (EN)</option>
+                        </select>
+                    </div>
 
-                   {user &&  <button className="border border-black px-4 py-1 text-sm font-light rounded-full cursor-pointer transition-all" onClick={() => navigate("/owner")}>
+                   {/* Admin Dashboard hidden for guests */}
+                   {false && user &&  <button className="border border-black px-4 py-1 text-sm font-light rounded-full cursor-pointer transition-all" onClick={() => navigate("/owner")}>
                        {t('Dashboard')}
                     </button>}
 

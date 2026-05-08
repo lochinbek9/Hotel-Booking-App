@@ -1,4 +1,4 @@
-import { assets, cities } from "../assets/assets"
+import { assets } from "../assets/assets"
 import { useTranslation } from "react-i18next";
 
 function Hero() {
@@ -9,9 +9,12 @@ function Hero() {
             <h1 className="font-playfair text-2xl md:text-5xl md:text-[56px] md:leading[56px] font-bold md:font-extrabold max-w-xl mt-4">
                 {t('Hero Title')}
             </h1>
-            <p className="max-w-130 mt-2 text-sm md:text-base">
+            <p className="max-w-130 mt-2 text-sm md:text-base mb-6 font-medium drop-shadow-md">
                 {t('Hero Subtitle')}
             </p>
+            <button className="bg-[#49B9FF] hover:bg-[#3ba0e5] text-white px-8 py-3 rounded-full font-medium transition-all text-lg shadow-lg shadow-[#49B9FF]/30 cursor-pointer">
+                {t('View Rooms', 'View Rooms')}
+            </button>
 
             <form className='bg-white text-gray-500 rounded-lg px-6 py-4  flex flex-col md:flex-row max-md:items-start gap-4 max-md:mx-auto mt-8'>
 
@@ -23,7 +26,7 @@ function Hero() {
                     <input list='destinations' id="destinationInput" type="text" className=" rounded border border-gray-200 px-3 py-1.5 mt-1.5 text-sm outline-none" placeholder={t('Type here')} required />
 
                     <datalist id="destinations">
-                        {cities.map((city, index) =>{
+                        {homeIcon.map((city, index) =>{
                             <option value={city} key={index }/>
                         })}
                     </datalist>

@@ -5,7 +5,7 @@ const resources = {
   uz: {
     translation: {
       "Home": "Bosh sahifa",
-      "Hotels": "Mehmonxonalar",
+      "Hotels": "Xonalarimiz",
       "Experience": "Tajriba",
       "About": "Biz haqimizda",
       "About us": "Biz haqimizda",
@@ -182,7 +182,13 @@ const resources = {
       "Free transfer and dinner for stays over 3 days": "3 kundan ko'p qolganlarga bepul transfer va kechki ovqat",
       "Early Bird Discount": "Erta band qilish chegirmasi",
       "Book 60 days in advance and get 30% off.": "60 kun oldin band qiling va 30% chegirmaga ega bo'ling.",
-      "Open in Google Maps": "Google Maps'da ochish"
+      "Open in Google Maps": "Google Maps'da ochish",
+      "Room Type": "Xona turi",
+      "All Rooms": "Barcha xonalar",
+      "Standard Room": "Standart xona",
+      "Deluxe Room": "Deluks xona",
+      "Luxury Suite": "Lyuks xona"
+
 
 
 
@@ -195,7 +201,7 @@ const resources = {
   ru: {
     translation: {
       "Home": "Главная",
-      "Hotels": "Отели",
+      "Hotels": "Наши номера",
       "Experience": "Опыт",
       "About": "О нас",
       "About us": "О нас",
@@ -372,7 +378,13 @@ const resources = {
       "Free transfer and dinner for stays over 3 days": "Бесплатный трансфер и ужин при проживании более 3 дней",
       "Early Bird Discount": "Скидка за раннее бронирование",
       "Book 60 days in advance and get 30% off.": "Забронируйте за 60 дней и получите скидку 30%.",
-      "Open in Google Maps": "Открыть в Google Maps"
+      "Open in Google Maps": "Открыть в Google Maps",
+      "Room Type": "Тип номера",
+      "All Rooms": "Все номера",
+      "Standard Room": "Стандартный номер",
+      "Deluxe Room": "Номер Делюкс",
+      "Luxury Suite": "Люкс номер"
+
 
 
 
@@ -385,7 +397,7 @@ const resources = {
   en: {
     translation: {
       "Home": "Home",
-      "Hotels": "Hotels",
+      "Hotels": "Our Rooms",
       "Experience": "Experience",
       "About": "About",
       "About us": "About us",
@@ -562,7 +574,13 @@ const resources = {
       "Free transfer and dinner for stays over 3 days": "Free transfer and dinner for stays over 3 days",
       "Early Bird Discount": "Early Bird Discount",
       "Book 60 days in advance and get 30% off.": "Book 60 days in advance and get 30% off.",
-      "Open in Google Maps": "Open in Google Maps"
+      "Open in Google Maps": "Open in Google Maps",
+      "Room Type": "Room Type",
+      "All Rooms": "All Rooms",
+      "Standard Room": "Standard Room",
+      "Deluxe Room": "Deluxe Room",
+      "Luxury Suite": "Luxury Suite"
+
 
 
 
