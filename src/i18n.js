@@ -32,7 +32,7 @@ const resources = {
       "Images": "Rasmlar",
       "Price": "Narx",
       "Location": "Joylashuv",
-      "Book Now": "Band qilish",
+      "Book Now": "Hoziroq band qilish",
       "Description": "Tavsif",
       "Facilities": "Qulayliklar",
       "Submit": "Yuborish",

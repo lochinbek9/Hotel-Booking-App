@@ -14,6 +14,14 @@ const BookIcon = () =>{
 </svg>
 }
 
+const getFlag = (lng) => {
+    switch (lng) {
+        case 'ru': return '🇷🇺';
+        case 'en': return '🇬🇧';
+        case 'uz': default: return '🇺🇿';
+    }
+};
+
 const Navbar = () => {
     const { t, i18n } = useTranslation();
 
@@ -66,12 +74,12 @@ const Navbar = () => {
                     ))}
                     
                     {/* Language Switcher */}
-                    <div className="flex items-center gap-1">
-                        <span className={`${isScrolled ? 'text-gray-700' : 'text-white'}`}>🌐</span>
+                    <div className={`flex items-center gap-1 px-3 py-1.5 rounded-full border ${isScrolled ? 'border-gray-300 bg-white' : 'border-white/30 bg-black/20 backdrop-blur-sm'}`}>
+                        <span className="text-lg">{getFlag(i18n.language)}</span>
                         <select 
                             value={i18n.language} 
                             onChange={(e) => i18n.changeLanguage(e.target.value)}
-                            className={`bg-transparent outline-none cursor-pointer font-medium ${isScrolled ? 'text-gray-700' : 'text-white'}`}
+                            className={`bg-transparent outline-none cursor-pointer font-medium text-sm ${isScrolled ? 'text-gray-700' : 'text-white'}`}
                         >
                             <option value="uz" className="text-black">UZ</option>
                             <option value="ru" className="text-black">RU</option>
@@ -123,12 +131,12 @@ const Navbar = () => {
                         </a>
                     ))}
                     
-                    <div className="flex items-center gap-2">
-                        <span>🌐</span>
+                    <div className="flex items-center gap-2 px-4 py-2 bg-gray-100 rounded-full">
+                        <span className="text-xl">{getFlag(i18n.language)}</span>
                         <select 
                             value={i18n.language} 
                             onChange={(e) => i18n.changeLanguage(e.target.value)}
-                            className="bg-transparent outline-none cursor-pointer font-medium"
+                            className="bg-transparent outline-none cursor-pointer font-medium text-gray-800 text-base"
                         >
                             <option value="uz" className="text-black">O'zbekcha (UZ)</option>
                             <option value="ru" className="text-black">Русский (RU)</option>

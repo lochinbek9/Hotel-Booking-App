@@ -12,24 +12,23 @@ function Hero() {
             <p className="max-w-130 mt-2 text-sm md:text-base mb-6 font-medium drop-shadow-md">
                 {t('Hero Subtitle')}
             </p>
-            <button className="bg-[#49B9FF] hover:bg-[#3ba0e5] text-white px-8 py-3 rounded-full font-medium transition-all text-lg shadow-lg shadow-[#49B9FF]/30 cursor-pointer">
-                {t('View Rooms', 'View Rooms')}
+            <button className="bg-orange-500 hover:bg-orange-600 text-white px-8 py-3 rounded-full font-medium transition-all text-lg shadow-lg shadow-orange-500/30 cursor-pointer">
+                {t('Book Now', 'Hoziroq band qilish')}
             </button>
 
             <form className='bg-white text-gray-500 rounded-lg px-6 py-4  flex flex-col md:flex-row max-md:items-start gap-4 max-md:mx-auto mt-8'>
 
                 <div>
                     <div className='flex items-center gap-2'>
-                    <img src={assets.calenderIcon} alt="Calendar" className="h-4" />
-                        <label htmlFor="destinationInput">{t('Destination')}</label>
+                        <img src={assets.homeIcon} alt="Room" className="h-4" />
+                        <label htmlFor="roomTypeInput">{t('Room Type')}</label>
                     </div>
-                    <input list='destinations' id="destinationInput" type="text" className=" rounded border border-gray-200 px-3 py-1.5 mt-1.5 text-sm outline-none" placeholder={t('Type here')} required />
-
-                    <datalist id="destinations">
-                        {homeIcon.map((city, index) =>{
-                            <option value={city} key={index }/>
-                        })}
-                    </datalist>
+                    <select id="roomTypeInput" className="rounded border border-gray-200 px-3 py-1.5 mt-1.5 text-sm outline-none w-full bg-white text-gray-700 min-w-32 cursor-pointer">
+                        <option value="All">{t('All Rooms')}</option>
+                        <option value="Standard">{t('Standard Room')}</option>
+                        <option value="Luxury">{t('Luxury Suite')}</option>
+                        <option value="Family">{t('Family Suite')}</option>
+                    </select>
                 </div>
 
                 <div>
