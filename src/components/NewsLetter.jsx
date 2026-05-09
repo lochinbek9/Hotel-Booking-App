@@ -6,18 +6,9 @@ import { useTranslation } from 'react-i18next';
 function NewsLetter() {
   const { t } = useTranslation();
   return (
-    <div className="flex flex-col items-center max-w-5xl lg:w-full rounded-2xl px-4 py-12 md:py-16 mx-2 lg:mx-auto my-30 bg-gray-900 text-white">
-
-    <Title title={t("Stay Inspired", "Stay Inspired")} subTitle={t('Stay Inspired Subtitle', 'Join our newsletter and be the first to discover new destinations, exclusive offers, and travel inspiration.')}/>
-
-    <div className="flex flex-col md:flex-row items-center justify-center gap-4 mt-6">
-        <input type="text" className="bg-white/10 px-4 py-2.5 border border-white/20 rounded outline-none max-w-66 w-full" placeholder={t("Enter your email", "Enter your email")} />
-        <button className="flex items-center justify-center gap-2 group bg-black px-4 md:px-7 py-2.5 rounded active:scale-95 transition-all">{t('Subscribe', 'Subscribe')}
-           <img src={assets.arrowIcon} alt="Arrow" className='w-3.5 invert group-hover:translate-x-1 transition-all' />
-        </button>
+    <div className="flex justify-center items-center flex-col gap-6 px-6 md:px-16 lg:px-24 xl:px-32 py-20">
+      <iframe src="https://yandex.uz/map-widget/v1/org/140753485947/?ll=72.332490%2C40.812586&z=16" width="860" height="400" frameBorder="1" allowFullScreen={true}></iframe>
     </div>
-    <p className="text-gray-500 mt-6 text-xs text-center">{t('Privacy Consent', 'By subscribing, you agree to our Privacy Policy and consent to receive updates.')}</p>
-</div>
   )
 }
 

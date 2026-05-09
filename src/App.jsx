@@ -13,9 +13,11 @@ import Dashboard from "./pages/Dashboard";
 import AddRoom from "./pages/AddRoom";
 import ListRoom from "./pages/ListRoom";
 
+
+
 function App() {
   const isOwnerPath = useLocation().pathname.includes("owner");
-
+  
   return (
     <div>
      {!isOwnerPath &&  <Navbar/>}
